@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\P4\branch-MSSS5.0-1704\Zigbee\stm32\stm32l1xx\decave_uwb_car\coalwashery.uvprojx
+Project File Date:  02/28/2019
+
+<h2>Output:</h2>
+Build target 'LPBSSv2.0'
+linking...
+Program Size: Code=54864 RO-data=1352 RW-data=532 ZI-data=14300  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin .\build\Car_uwb_card.axf --output Car_CARD.bin
+".\build\Car_uwb_card.axf" - 0 Error(s), 0 Warning(s).
+g types
+  void init_car_forcard();
+Application\application.c(343): warning:  #223-D: function "reinit_dw1000" declared implicitly
+        reinit_dw1000();
+Application\application.c(315): warning:  #177-D: variable "result" was declared but never referenced
+      int  result;
+Application\application.c(548): warning:  #223-D: function "txretreat_ack_send" declared implicitly
+                                        txretreat_ack_send();  //send buttun ack
+Application\application.c(562): warning:  #940-D: missing return statement at end of non-void function "AppButtonProc"
+  }
+Application\application.c(648): warning:  #223-D: function "motion_detect_int_open" declared implicitly
+                        motion_detect_int_open();
+Application\application.c(569): warning:  #550-D: variable "value" was set but never used
+      uint8 value;
+Application\application.c(730): warning:  #177-D: variable "crc" was declared but never referenced
+        uint16 crcCode,crc;
+Application\application.c(732): warning:  #177-D: variable "u8PacketNum" was declared but never referenced
+        uint8 u8PacketNum=0;
+Application\application.c(979): warning:  #223-D: function "reset_appstate" declared implicitly
+        reset_appstate();
+Application\application.c(1113): warning:  #223-D: function "motion_detect_int_close" declared implicitly
+                motion_detect_int_close();
+Application\application.c(1172): warning:  #223-D: function "txexcit_wait_send" declared implicitly
+                        txexcit_wait_send(U16ExciterID);    //send to sub station
+Application\application.c(1329): warning:  #177-D: variable "distance" was declared but never referenced
+                uwb_tof_distance_ts *distance;
+Application\application.c(1330): warning:  #550-D: variable "precount" was set but never used
+                int seqnum = 0 ,precount=0;
+Application\application.c(383): warning:  #177-D: function "AppHelpBegin" was declared but never referenced
+  static void AppHelpBegin(void)
+Application\application.c: 16 warnings, 0 errors
+compiling main.c...
+Application\instance.h(650): warning:  #1295-D: Deprecated declaration init_car_forrssi - give arg types
+  void init_car_forrssi();
+Application\instance.h(652): warning:  #1295-D: Deprecated declaration init_car_forcard - give arg types
+  void init_car_forcard();
+Application\main.c(145): warning:  #223-D: function "Application" declared implicitly
+        Application();
+Application\main.c: 3 warnings, 0 errors
+compiling instance.c...
+Application\instance.h(650): warning:  #1295-D: Deprecated declaration init_car_forrssi - give arg types
+  void init_car_forrssi();
+Application\instance.h(652): warning:  #1295-D: Deprecated declaration init_car_forcard - give arg types
+  void init_car_forcard();
+Application\instance.c(313): warning:  #223-D: function "led_station_on" declared implicitly
+                led_station_on();
+Application\instance.c(315): warning:  #223-D: function "led_station_off" declared implicitly
+                led_station_off();
+Application\instance.c(471): warning:  #174-D: expression has no effect
+                                my_alarmlist.addr[i] == 0;
+Application\instance.c(1689): warning:  #550-D: variable "runtime" was set but never used
+        int pollsendlen=0,seqnum=0,runtime=0;
+Application\instance.c(2664): warning:  #177-D: variable "row" was declared but never referenced
+                                                        uint8 row=0,column=0,i=0;
+Application\instance.c(2664): warning:  #177-D: variable "column" was declared but never referenced
+                                                        uint8 row=0,column=0,i=0;
+Application\instance.c(2664): warning:  #177-D: variable "i" was declared but never referenced
+                                                        uint8 row=0,column=0,i=0;
+Application\instance.c(2665): warning:  #177-D: variable "battery" was declared but never referenced
+                                                        uint16 battery=0,cardseq=0;
+Application\instance.c(2665): warning:  #177-D: variable "cardseq" was declared but never referenced
+                                                        uint16 battery=0,cardseq=0;
+Application\instance.c(2666): warning:  #177-D: variable "old_dis" was declared but never referenced
+                                                        uint32 old_dis =0;
+Application\instance.c(2995): warning:  #188-D: enumerated type mixed with another type
+      instance_data[0].mode =  (uint8)inst_mode;                   // set the role
+Application\instance.c(3261): warning:  #940-D: missing return statement at end of non-void function "reinit_dw1000"
+  }
+Application\instance.c(3518): warning:  #223-D: function "Sleep" declared implicitly
+      Sleep(1);   //200 us to wake up then waits 5ms for DW1000 XTAL to stabilise
+Application\instance.c(3595): warning:  #177-D: variable "u16SrcAddr" was declared but never referenced
+        uint16 u16SrcAddr = 0;
+Application\instance.c(3596): warning:  #177-D: variable "u16Seqnum" was declared but never referenced
+      uint16 u16Seqnum = 0;
+Application\instance.c(4006): warning:  #223-D: function "card_reset_dw1000" declared implicitly
+          if(card_reset_dw1000() ==-1)  //reset the dw1000
+Application\instance.c: 18 warnings, 0 errors
+compiling board.c...
+..\Drivers\board.c(61): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+      NVIC_InitTypeDef NVIC_InitStructure;
+..\Drivers\board.c: 1 warning, 0 errors
+compiling com_config.c...
+compiling led.c...
+linking...
+Program Size: Code=54864 RO-data=1352 RW-data=532 ZI-data=14300  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin .\build\Car_uwb_card.axf --output Car_CARD.bin
+".\build\Car_uwb_card.axf" - 0 Error(s), 38 Warning(s).
